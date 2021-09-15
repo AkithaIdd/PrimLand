@@ -1,0 +1,2 @@
+rootProject.name = "PrimLand"
+include ':app'

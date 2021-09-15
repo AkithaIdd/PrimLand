@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="wrap_content"
+    tools:context=".DashBoardActivity">
+
+<!--    <include-->
+<!--        layout="@layout/app_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+<FrameLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/red">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+
+        android:theme="?attr/actionBarTheme" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="Prime Land Plot Reservation"
+
+                />
+            <TextView
+                android:id="@+id/txt_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+
+
+                android:text="Sahan Perera"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</FrameLayout>
+
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="0dp"
+                        android:paddingLeft="0dp"
+                        android:background="@drawable/background"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="410dp"
+                            android:layout_height="635dp"
+                            android:background="@color/transparent"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp">
+
+                            <GridLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/background_cl"
+                                android:columnCount="2"
+                                android:paddingBottom="12dp"
+                                android:rowCount="4">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/custom_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="0"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="0dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/transparent">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/my_btn_bg">
+
+                                            <LinearLayout
+
+                                                android:id="@+id/customer_btn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="131dp"
+                                                android:layout_gravity="center_vertical|center_horizontal"
+                                                android:layout_margin="1dp"
+                                                android:layout_marginBottom="10dp"
+                                                android:background="@drawable/background_effect"
+                                                android:clickable="true"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:visibility="visible">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="70dp"
+                                                    android:src="@drawable/customer_red" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/customer_btn_text"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+
+                                                    android:textStyle="bold" />
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/unsold_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="0"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/my_btn_bg">
+
+                                        <LinearLayout
+                                            android:id="@+id/unsoldList_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="131dp"
+                                            android:layout_gravity="center_vertical|center_horizontal"
+                                            android:layout_margin="1dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/background_effect"
+                                            android:clickable="true"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="70dp"
+                                                android:src="@drawable/plots" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/unsold_btn_text"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+                                    </FrameLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/reservation_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="1"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/my_btn_bg">
+
+                                        <LinearLayout
+                                            android:id="@+id/reservation_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="131dp"
+                                            android:layout_gravity="center_vertical|center_horizontal"
+                                            android:layout_margin="1dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/background_effect"
+                                            android:clickable="true"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="75dp"
+                                                android:src="@drawable/reservation" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/reservation_btn_text"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/payment_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="1"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/my_btn_bg">
+
+                                        <LinearLayout
+                                            android:id="@+id/payment_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="131dp"
+                                            android:layout_gravity="center_vertical|center_horizontal"
+                                            android:layout_margin="1dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/background_effect"
+                                            android:clickable="true"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="75dp"
+                                                android:src="@drawable/payments" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/payments_btn_text"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/deposit_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="2"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/my_btn_bg">
+
+                                        <LinearLayout
+                                            android:id="@+id/deposit_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="131dp"
+                                            android:layout_gravity="center_vertical|center_horizontal"
+                                            android:layout_margin="1dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/background_effect"
+                                            android:clickable="true"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="75dp"
+                                                android:src="@drawable/payments" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/deposit_btn_text"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/tansfer_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="1"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="2"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <FrameLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/my_btn_bg">
+
+                                        <LinearLayout
+                                            android:id="@+id/transfer_btn"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="131dp"
+                                            android:layout_gravity="center_vertical|center_horizontal"
+                                            android:layout_margin="1dp"
+                                            android:layout_marginBottom="10dp"
+                                            android:background="@drawable/background_effect"
+                                            android:clickable="true"
+                                            android:gravity="center"
+                                            android:orientation="vertical"
+                                            android:visibility="visible">
+
+                                            <ImageView
+                                                android:layout_width="50dp"
+                                                android:layout_height="75dp"
+                                                android:src="@drawable/transfer_to_asm" />
+
+                                            <TextView
+                                                android:id="@+id/transfer_text_id"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="@string/transfer_btn_text"
+                                                android:textColor="@color/black"
+                                                android:textSize="18sp"
+                                                android:textStyle="bold" />
+
+                                        </LinearLayout>
+
+                                    </FrameLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/report_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_column="0"
+                                    android:layout_columnSpan="2"
+                                    android:layout_columnWeight="1"
+                                    android:layout_gravity="fill"
+                                    android:layout_row="3"
+                                    android:layout_rowWeight="1"
+                                    android:backgroundTint="@color/background_cl"
+                                    android:visibility="visible"
+                                    app:cardElevation="0dp"
+                                    app:contentPaddingBottom="10dp"
+                                    app:contentPaddingLeft="10dp"
+                                    app:contentPaddingRight="10dp"
+                                    app:contentPaddingTop="10dp">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <FrameLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/my_btn_bg">
+
+                                            <LinearLayout
+                                                android:id="@+id/reports_btn"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="131dp"
+                                                android:layout_gravity="center_vertical|center_horizontal"
+                                                android:layout_margin="1dp"
+                                                android:layout_marginBottom="10dp"
+                                                android:background="@drawable/background_effect"
+                                                android:clickable="true"
+                                                android:gravity="center"
+                                                android:orientation="vertical"
+                                                android:visibility="visible">
+
+                                                <ImageView
+                                                    android:layout_width="50dp"
+                                                    android:layout_height="70dp"
+                                                    android:src="@drawable/reports" />
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="@string/report_btn_text"
+                                                    android:textColor="@color/black"
+                                                    android:textSize="18sp"
+                                                    android:textStyle="bold" />
+
+
+                                            </LinearLayout>
+
+                                        </FrameLayout>
+
+                                    </LinearLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </GridLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+</LinearLayout>
+<!--<androidx.cardview.widget.CardView-->
+
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_column="0"-->
+<!--android:layout_columnWeight="1"-->
+<!--android:layout_gravity="fill"-->
+<!--android:layout_row="3"-->
+<!--android:layout_rowWeight="1"-->
+
+<!--app:cardElevation="8dp"-->
+<!--app:contentPaddingLeft="10dp"-->
+<!--app:contentPaddingRight="10dp"-->
+<!--app:contentPaddingTop="10dp"-->
+<!--app:contentPaddingBottom="10dp"-->
+<!--android:backgroundTint="@color/background_cl">-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/transparent">-->
+
+
+
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/my_btn_bg">-->
+
+<!--        <LinearLayout-->
+
+<!--            android:id="@+id/reports_btn"-->
+<!--            android:clickable="true"-->
+<!--            android:visibility="visible"-->
+<!--            android:background="@drawable/background_effect"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="131dp"-->
+<!--            android:layout_margin="1dp"-->
+<!--            android:layout_gravity="center_vertical|center_horizontal"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:src="@drawable/reports" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/report_btn_text"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </FrameLayout>-->
+<!--</LinearLayout>-->
+
+
+
+<!--</androidx.cardview.widget.CardView>-->

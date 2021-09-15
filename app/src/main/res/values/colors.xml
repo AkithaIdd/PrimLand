@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--    <color name="black">#FF000000</color>-->
+    <!--    <color name="white">#FFFFFFFF</color>-->
+    <color name="colorPrimary">#01652d</color>
+    <color name="colorPrimaryDark">#01401d</color>
+    <color name="colorAccent">#00755a</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="red">#ea1d24</color>
+    <color name="red_f1">#F14336</color>
+    <color name="gray_2f">#2f2f2f</color>
+    <color name="gray_46">#464646</color>
+    <color name="blue_d2">#d2e8ff</color>
+    <color name="gray_dd">#dddddd</color>
+    <color name="green">#00755a</color>
+    <color name="green_transparent">#9901652d</color>
+    <color name="green_13">#45bc79</color>
+    <color name="green_00">#00BB1C</color>
+
+    <color name="green_b2">#ebfff4</color>
+    <color name="gray_c9">#d2e8ff</color>
+    <color name="gray_6f">#6f6f6f</color>
+    <color name="transparent">#01FFFFFF</color>
+    <color name="secondary_text">#757575</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="ash_light_c">#dddddd</color>
+    <color name="blue_c">#20bce6</color>
+    <color name="yellow_ff">#FFE000</color>
+    <color name="yellow_fa">#fafad2</color>
+    <color name="gray_d8">#D8D8D8</color>
+    <color name="background_cl">#e4ede8</color>
+    <color name="btn_cl">#ebfff4</color>
+</resources>

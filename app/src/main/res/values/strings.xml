@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">PrimLand</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in_btn">SIGN IN</string>
+    <string name="version_text">Version 1.0.1</string>
+    <string name="setting_btn_text">Settings</string>
+    <string name="dash_board_title_text">Prime Land Plot Reservation</string>
+    <string name="dash_board_title_name">Sahan Perera</string>
+    <string name="customer_btn_text">Customer</string>
+    <string name="unsold_btn_text">Unsold List</string>
+    <string name="reservation_btn_text">Reservation</string>
+    <string name="payments_btn_text">Payments</string>
+    <string name="deposit_btn_text">Payment Deposit</string>
+    <string name="transfer_btn_text">Transfer to ASM</string>
+    <string name="report_btn_text">Reports</string>
+    <string name="customer_title">Customer</string>
+    <string name="customer_search_hint">Search By Name,NIC,Mobile</string>
+    <string name="customer_info_title">Customer Info</string>
+    <string name="info_btn">Info</string>
+    <string name="photo_btn">Photo</string>
+    <string name="reservation_btn">Reservation</string>
+    <string name="title_activity_customer_info_navi">CustomerInfoNavi</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="code_text">Code:</string>
+    <string name="name_text">Name:</string>
+    <string name="email_text">Email:</string>
+    <string name="nic_text">NIC:</string>
+    <string name="mobile_text">Mobile:</string>
+    <string name="address__text">Address:</string>
+    <string name="info_text">Info:</string>
+    <string name="cancel_btn_text">CANCEl</string>
+    <string name="save_btn_text">SAVE</string>
+    <string name="customer_infomation">customer infomation</string>
+</resources>
